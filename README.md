@@ -2,7 +2,7 @@
 매치업 Python을 사용한 자연어 처리 심화 교육자료
 
 # 🗣️ PyQt5 Speech Transcriber
-> PyQt5 GUI에서 `speech_recognition`으로 마이크 음성을 텍스트로 변환하는 간단한 예제 앱
+> PyQt5 GUI에서 `speech_recognition`으로 지정된 음성파일을 텍스트로 변환하는 간단한 예제 앱
 
 ## 📖 소개
 이 애플리케이션은 `PyQt5` 기반 GUI에서 버튼으로 **음성 인식 시작/정지**를 제어하고,
