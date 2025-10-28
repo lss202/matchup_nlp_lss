@@ -79,9 +79,9 @@ pyinstaller --onefile --windowed --name PyQtSpeechTranscriber --icon assets/app.
 ```
 생성물: `dist/PyQtSpeechTranscriber.exe`
 > --onefile: 한개 파일로 나오도록 빌드합니다
-> --windowed: 콘솔창을 표시하지 않습니다. (파이썬 내 print 등, 시스템메시지 확인불가)
-> --name: 앱 이름을 설정합니다.
-> --icon: 앱 아이콘을 설정합니다.
+<br>--windowed: 콘솔창을 표시하지 않습니다. (파이썬 내 print 등, 시스템메시지 확인불가)
+<br>--name: 앱 이름을 설정합니다.
+<br>--icon: 앱 아이콘을 설정합니다.
 
 #### 🍎 macOS / 🐧 Linux
 ```bash
