@@ -95,8 +95,8 @@ pyinstaller --onefile --windowed main.py   --hidden-import=pyaudio --hidden-impo
 
 ```bash
 # 저장소 클론
-git clone https://github.com/yourusername/pyqt5-speech-transcriber.git
-cd pyqt5-speech-transcriber
+git clone https://github.com/lss202/matchup_nlp_lss.git
+cd matchup_nlp_lss
 
 # 새 브랜치 생성
 git checkout -b feature/기능명
