@@ -1,0 +1,27 @@
+import speech_recognition as sr
+def transcribe_audio(audio_file):
+    
+    # Recognizer 객체 생성
+    recognizer = sr.Recognizer()
+
+    # 1. 오디오 파일 로드
+    with sr.AudioFile(audio_file) as source:
+        # 주변 소음 조정 (선택적)
+        # recognizer.adjust_for_ambient_noise(source)
+
+        # 오디오 데이터 읽기
+        audio = recognizer.record(source)
+
+    try:
+        # 2. 전처리 3.특징 추출 4. 음향 모델 및 5. 언어 모델 (Google Speech Recognition API내부에서 처리됨)
+        # 6. 디코딩: 음성을 텍스트로 변환
+        text = recognizer.recognize_google(audio, language="ko-KR")
+        print(f"인식된 텍스트: {text}")
+        return text
+    except sr.UnknownValueError:
+        print("음성을 인식할 수 없습니다.")
+    except sr.RequestError as e:
+        print(f"Google Speech Recognition 서비스에 오류가 발생했습니다; {e}")
+
+if __name__ == "__main__":
+    transcribe_audio("sample.wav")
