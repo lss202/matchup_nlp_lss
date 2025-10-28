@@ -11,6 +11,24 @@
 
 ---
 
+## 🧭 Git 기본 사용법
+
+```bash
+# 저장소 클론
+git clone https://github.com/lss202/matchup_nlp_lss.git
+cd matchup_nlp_lss
+
+# 새 브랜치 생성
+git checkout -b feature/기능명
+
+# 변경사항 커밋 및 푸시
+git add .
+git commit -m "Add: 기능 설명"
+git push origin feature/기능명
+```
+
+---
+
 ## 💻 Python 가상환경 설정
 
 ### 1️⃣ 가상환경 생성
@@ -88,23 +106,6 @@ pyinstaller --onefile --windowed main.py   --add-data "docs/*:docs" --add-data "
 일부 환경에서 `pyaudio` 또는 백엔드 관련 모듈 검색이 누락될 수 있습니다.
 ```bash
 pyinstaller --onefile --windowed main.py   --hidden-import=pyaudio --hidden-import=speech_recognition
-```
----
-
-## 🧭 Git 기본 사용법
-
-```bash
-# 저장소 클론
-git clone https://github.com/lss202/matchup_nlp_lss.git
-cd matchup_nlp_lss
-
-# 새 브랜치 생성
-git checkout -b feature/기능명
-
-# 변경사항 커밋 및 푸시
-git add .
-git commit -m "Add: 기능 설명"
-git push origin feature/기능명
 ```
 
 ---
